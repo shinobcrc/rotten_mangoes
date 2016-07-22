@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+ 
+<p>
+  <strong>Name:</strong>
+  <%= @add_image_to_review.name %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= @add_image_to_review.description %>
+</p>
+ 
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @add_image_to_review.image.thumb.url %>
+</p>
+ 
+<%= link_to 'Edit', edit_add_image_to_review_path(@add_image_to_review) %> |
+<%= link_to 'Back', add_image_to_review_path %>
